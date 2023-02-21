@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <title>Biblioteca</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header">
+        <a class="logo" href="./index.html">
+          <img src="./img/book-shelf.svg" />
+        </a>
+
+        <div class="search__header">
+          <input
+            type="search"
+            placeholder="Pesquisar livro..."
+            id="search"
+            class="search__input"
+            data-search
+          />
+          <button class="search__btn" data-btn-search>
+            <img src="./img/search.svg" />
+          </button>
+        </div>
+
+        <a href="./pages/addBook.html">
+          <img class="add__book" src="./img/plus.svg" />
+        </a>
+      </nav>
+    </header>
+
+    <ul class="books__container" alt="my books" data-list></ul>
+
+    <script src="./js/showBooks.js" type="module"></script>
+    <script src="./js/conectAPI.js" type="module"></script>
+    <script src="./js/searchBook.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-form.css" />
+    <title>Biblioteca</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header">
+        <a class="logo" href="../index.html">
+          <img src="../img/book-shelf.svg" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <form class="form__container" data-form>
+        <h2 class="form__title">Cadastre um novo livro</h2>
+
+        <div class="form__requisitions">
+          <label class="requisition__request" for="title"
+            >Título do livro</label
+          >
+          <input name="title" class="requisition__answer" required data-title />
+        </div>
+
+        <div class="form__requisitions">
+          <label class="requisition__request" for="title">Nome do autor</label>
+          <input
+            name="author"
+            class="requisition__answer"
+            required
+            data-author
+          />
+        </div>
+
+        <div class="form__requisitions">
+          <label class="requisition__request" for="title">Url da capa</label>
+          <input name="url" class="requisition__answer" required data-url />
+        </div>
+
+        <button class="form__btn" type="submit">Cadastrar</button>
+      </form>
+    </main>
+    <script src="../js/addBook.js" type="module"></script>
+  </body>
+</html>
